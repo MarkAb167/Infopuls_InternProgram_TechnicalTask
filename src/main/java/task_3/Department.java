@@ -18,14 +18,27 @@ public class Department {
     this.groupsList = groupsList;
   }
 
-  public void changeCurator(Group group, Teacher teacher){
+  public void changeSpecializationCodeInGroup(int id, SpecializationCode code) {
+    try {
+      groupsList.stream()
+          .filter(group -> group.getId() == id)
+          .findAny()
+          .orElse(null)
+          .setSpecializationCode(code);
+    } catch (NullPointerException e) {
+      System.out.println("No group with ths ID");
+    }
+  }
+
+  public void changeCurator(Group group, Teacher teacher) {
     group.setCurator(teacher);
   }
 
-  public void addGroup(Group group){
+  public void addGroup(Group group) {
     groupsList.add(group);
   }
-  public void addTeacher(Teacher teacher){
+
+  public void addTeacher(Teacher teacher) {
     teachersList.add(teacher);
   }
 
@@ -59,11 +72,16 @@ public class Department {
 
   @Override
   public String toString() {
-    return "Department{" +
-            "name='" + name + '\'' +
-            ", id=" + id +
-            ", teachersList=" + teachersList +
-            ", groupsList=" + groupsList +
-            '}';
+    return "Department{"
+        + "name='"
+        + name
+        + '\''
+        + ", id="
+        + id
+        + ", teachersList="
+        + teachersList
+        + ", groupsList="
+        + groupsList
+        + '}';
   }
 }

@@ -9,19 +9,30 @@ public class Group {
 
   private final String name;
 
+  SpecializationCode specializationCode;
+
   private final List<Student> studentsList;
 
   private Teacher curator;
 
   private final List<Subject> subjectsList;
 
-  public Group(String name, List<Student> studentsList, Teacher curator, List<Subject> subjects) {
+  public Group(String name, List<Student> studentsList, Teacher curator, List<Subject> subjects, SpecializationCode code) {
     this.name = name;
     this.studentsList = studentsList;
     this.curator = curator;
     this.subjectsList = subjects;
+    this.specializationCode = code;
     this.id = CODE.incrementAndGet();
 
+  }
+
+  public String getDecriptionofSpecializationCode(){
+    return specializationCode.getDescription();
+  }
+
+  public void setSpecializationCode(SpecializationCode code){
+    this.specializationCode = code;
   }
 
   public void addSubject(Subject subject) {
@@ -41,7 +52,7 @@ public class Group {
         group.getStudentsList().stream()
             .filter(student -> student.getId() == serialNum)
             .findAny()
-            .orElse(null));
+            .orElseThrow(null));
   }
 
   public void relocateStudentToAnotherGroup(int serialNum, Group group) {
