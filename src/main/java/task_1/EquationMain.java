@@ -14,8 +14,10 @@ public class EquationMain {
       }
     }
     matrix.readMatrixBySquare();
-
-
+    System.out.println("==================================");
+    System.out.println(matrix.getMatrixMaxBoundWithInfinity());
+    System.out.println("==================================");
+    System.out.println(matrix.getMatrixMaxBoundWithOutInfinity());
   }
 
 
