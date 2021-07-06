@@ -1,7 +1,7 @@
-package task_3.Department;
+package task_3;
 
-import task_3.Group.Group;
-import task_3.Teacher.Teacher;
+import task_3.Group;
+import task_3.Teacher;
 
 import java.util.List;
 

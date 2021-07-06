@@ -1,13 +1,11 @@
-package task_3.Group;
-
-import task_3.Student.Student;
-import task_3.Subject.Subject;
-import task_3.Teacher.Teacher;
+package task_3;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Group {
-  private static int CODE;
+  private static final AtomicInteger CODE = new AtomicInteger(0);
+  private int id;
 
   private final String name;
 
@@ -22,7 +20,8 @@ public class Group {
     this.studentsList = studentsList;
     this.curator = curator;
     this.subjectsList = subjects;
-    CODE++;
+    this.id = CODE.incrementAndGet();
+
   }
 
   public void addSubject(Subject subject) {
@@ -40,7 +39,7 @@ public class Group {
   public void getStudentFromAnotherGroup(int serialNum, Group group) {
     addStudent(
         group.getStudentsList().stream()
-            .filter(student -> student.getSerialId() == serialNum)
+            .filter(student -> student.getId() == serialNum)
             .findAny()
             .orElse(null));
   }
@@ -48,34 +47,28 @@ public class Group {
   public void relocateStudentToAnotherGroup(int serialNum, Group group) {
     group.addStudent(
         studentsList.stream()
-            .filter(student -> student.getSerialId() == serialNum)
+            .filter(student -> student.getId() == serialNum)
             .findAny()
             .orElse(null));
   }
 
-  public static int getSpecializationCode() {
-    return SPECIALIZATION_CODE;
+  public int getId() {
+    return id;
   }
 
-  public static void setSpecializationCode(int specializationCode) {
-    SPECIALIZATION_CODE = specializationCode;
+  public void setId(int id) {
+    this.id = id;
   }
 
   public String getName() {
     return name;
   }
 
-  public void setName(String name) {
-    this.name = name;
-  }
 
   public List<Student> getStudentsList() {
     return studentsList;
   }
 
-  public void setStudentsList(List<Student> studentsList) {
-    this.studentsList = studentsList;
-  }
 
   public Teacher getCurator() {
     return curator;
@@ -89,9 +82,6 @@ public class Group {
     return subjectsList;
   }
 
-  public void setSubjectsList(List<Subject> subjectsList) {
-    this.subjectsList = subjectsList;
-  }
 
   @Override
   public String toString() {

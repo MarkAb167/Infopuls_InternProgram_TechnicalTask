@@ -1,7 +1,4 @@
-package task_3.TheUniversity;
-
-import task_3.Faculty.Faculty;
-import task_3.Subject.Subject;
+package task_3;
 
 import java.util.List;
 
@@ -28,25 +25,16 @@ public class TheUniversity {
     return name;
   }
 
-  public void setName(String name) {
-    this.name = name;
-  }
 
   public List<Faculty> getFacultyList() {
     return facultyList;
   }
 
-  public void setFacultyList(List<Faculty> facultyList) {
-    this.facultyList = facultyList;
-  }
 
   public List<Subject> getSubjectsList() {
     return subjectsList;
   }
 
-  public void setSubjectsList(List<Subject> subjectsList) {
-    this.subjectsList = subjectsList;
-  }
 
   @Override
   public String toString() {

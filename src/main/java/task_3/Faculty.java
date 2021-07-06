@@ -1,6 +1,4 @@
-package task_3.Faculty;
-
-import task_3.Department.Department;
+package task_3;
 
 import java.util.List;
 
@@ -32,16 +30,9 @@ public class Faculty {
     return id;
   }
 
-  public void setId(int id) {
-    this.id = id;
-  }
 
   public List<Department> getDepartmentList() {
     return departmentList;
-  }
-
-  public void setDepartmentList(List<Department> departmentList) {
-    this.departmentList = departmentList;
   }
 
   @Override

@@ -1,12 +1,16 @@
-package task_3.Subject;
+package task_3;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Subject {
-    private static int id;
+    private static final AtomicInteger ID = new AtomicInteger(0);
 
     private final String name;
 
+    private int id;
+
     public Subject( String name) {
-        id++;
+        this.id = ID.incrementAndGet();
         this.name = name;
     }
 
@@ -22,9 +26,6 @@ public class Subject {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @Override
     public boolean equals(Object o) {

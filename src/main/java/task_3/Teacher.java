@@ -1,6 +1,4 @@
-package task_3.Teacher;
-
-import task_3.Subject.Subject;
+package task_3;
 
 import java.util.List;
 

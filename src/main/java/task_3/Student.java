@@ -1,4 +1,4 @@
-package task_3.Student;
+package task_3;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -56,7 +56,8 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", averageScore=" + averageScore +
                 '}';
