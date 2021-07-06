@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ebaba5c2-3a7d-47f5-8e72-c89782ea327a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfopulsTechnicalTask.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task_2/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task_2/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_1/Equation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_1/EquationMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_1/Matrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_2/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/Faculty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/SpecializationCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_3/TheUniversity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/task_4/DataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ut9lGJwdznZ5dS4O4lr60pZRrJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FirstPrg" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="task_3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.QuickSortTest.quickSort">
+    <configuration name="EquationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task_1.EquationMain" />
+      <module name="InfopulsTechnicalTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task_2.QuickSort" />
+      <module name="InfopulsTechnicalTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSortTest.quickSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InfopulsTechnicalTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task_2" />
+      <option name="MAIN_CLASS_NAME" value="task_2.QuickSortTest" />
+      <option name="METHOD_NAME" value="quickSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuickSortTest.quickSort" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.EquationMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebaba5c2-3a7d-47f5-8e72-c89782ea327a" name="Default Changelist" comment="" />
+      <created>1625474172120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625474172120</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
