@@ -17,21 +17,25 @@ public class Group {
 
   private final List<Subject> subjectsList;
 
-  public Group(String name, List<Student> studentsList, Teacher curator, List<Subject> subjects, SpecializationCode code) {
+  public Group(
+      String name,
+      List<Student> studentsList,
+      Teacher curator,
+      List<Subject> subjects,
+      SpecializationCode code) {
     this.name = name;
     this.studentsList = studentsList;
     this.curator = curator;
     this.subjectsList = subjects;
     this.specializationCode = code;
     this.id = CODE.incrementAndGet();
-
   }
 
-  public String getDecriptionofSpecializationCode(){
+  public String getDecriptionofSpecializationCode() {
     return specializationCode.getDescription();
   }
 
-  public void setSpecializationCode(SpecializationCode code){
+  public void setSpecializationCode(SpecializationCode code) {
     this.specializationCode = code;
   }
 
@@ -56,11 +60,15 @@ public class Group {
   }
 
   public void relocateStudentToAnotherGroup(int serialNum, Group group) {
-    group.addStudent(
+    Student foundStudent =
         studentsList.stream()
             .filter(student -> student.getId() == serialNum)
             .findAny()
-            .orElse(null));
+            .orElse(null);
+    if (foundStudent != null){
+      group.addStudent(foundStudent);
+    }
+
   }
 
   public int getId() {
@@ -75,11 +83,9 @@ public class Group {
     return name;
   }
 
-
   public List<Student> getStudentsList() {
     return studentsList;
   }
-
 
   public Teacher getCurator() {
     return curator;
@@ -92,7 +98,6 @@ public class Group {
   public List<Subject> getSubjectsList() {
     return subjectsList;
   }
-
 
   @Override
   public String toString() {

@@ -9,7 +9,7 @@ public enum SpecializationCode {
     SC06("Computational geometry"),
     SC07("Modeling and simulation");
 
-    private String description;
+    private final String description;
 
     SpecializationCode(String description){
         this.description = description;
