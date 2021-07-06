@@ -19,15 +19,15 @@ public class Department {
   }
 
   public void changeSpecializationCodeInGroup(int id, SpecializationCode code) {
-    try {
-      groupsList.stream()
+
+      Group foundGroup = groupsList.stream()
           .filter(group -> group.getId() == id)
           .findAny()
-          .orElse(null)
-          .setSpecializationCode(code);
-    } catch (NullPointerException e) {
-      System.out.println("No group with ths ID");
-    }
+          .orElse(null);
+      if (foundGroup != null){
+        foundGroup.setSpecializationCode(code);
+      }
+
   }
 
   public void changeCurator(Group group, Teacher teacher) {

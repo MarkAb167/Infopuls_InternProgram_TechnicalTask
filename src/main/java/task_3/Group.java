@@ -52,11 +52,14 @@ public class Group {
   }
 
   public void getStudentFromAnotherGroup(int serialNum, Group group) {
-    addStudent(
-        group.getStudentsList().stream()
+
+        Student foundStudent = group.getStudentsList().stream()
             .filter(student -> student.getId() == serialNum)
             .findAny()
-            .orElseThrow(null));
+            .orElseThrow(null);
+    if (foundStudent != null) {
+      addStudent(foundStudent);
+    }
   }
 
   public void relocateStudentToAnotherGroup(int serialNum, Group group) {
