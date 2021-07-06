@@ -13,6 +13,7 @@ public class EquationMain {
        matrix.elements[i][j] = equation.calculate(i,j);
       }
     }
+    matrix.readMatrixBySquare();
 
 
   }
